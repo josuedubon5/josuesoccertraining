@@ -216,8 +216,48 @@
                 font-size: 1.2rem;
             }
         }
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josué's Soccer Training</title>
+    <style>
+        /* Gallery Section */
+        #gallery {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        #gallery h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Gallery Item */
+        .gallery-item {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
+
 <body>
 
     <!-- Header (Navigation) -->
@@ -255,15 +295,25 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-        <h2>Gallery</h2>
-        <div>
-            <!-- Add your image URLs here -->
-            <img src="https://example.com/photo1.jpg" alt="Soccer training image 1">
-            <img src="https://example.com/photo2.jpg" alt="Soccer training image 2">
-            <img src="https://example.com/photo3.jpg" alt="Soccer training image 3">
+    <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/IMG_6072.JPG" alt="Gallery Image 1">
         </div>
-    </section>
+        
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/main/your_image_name2.jpg" alt="Gallery Image 2">
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/main/your_image_name3.jpg" alt="Gallery Image 3">
+        </div>
+    </div>
+</section>
 
     <!-- Footer Section -->
     <footer id="contact" class="footer">
