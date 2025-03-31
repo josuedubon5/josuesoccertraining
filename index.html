@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josué's Soccer Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
             background-image: url('https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/PHOTO-2024-05-21-00-11-02.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            color: white;
         }
 
+        /* Navigation */
         .nav {
             background-color: rgba(0, 0, 0, 0.7);
             overflow: hidden;
@@ -37,43 +38,87 @@
             color: black;
         }
 
+        /* Container */
         .container {
             max-width: 800px;
             margin: 50px auto;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
             border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
             color: #fff;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
         h2 {
             color: #fff;
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 18px;
             color: #fff;
+            line-height: 1.6;
         }
 
         .btn {
             text-decoration: none;
             color: white;
-            background-color: black;
-            padding: 10px 20px;
+            background-color: #333;
+            padding: 12px 25px;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
+            font-size: 16px;
         }
 
-        .services, .about, .contact {
-            margin-top: 20px;
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Services Section */
+        .services {
+            margin-top: 40px;
         }
 
         .service-item {
-            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-item h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            color: #333;
+            font-size: 16px;
+        }
+
+        .contact {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 18px;
         }
     </style>
 </head>
@@ -95,20 +140,21 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="container">
         <h2>About Me</h2>
         <p>Hi, I'm Josué Dubon! I have had the privilege of playing professional soccer in El Salvador for several years, where I honed my skills on the field and developed a deep understanding of the game. Throughout my career, I played as a winger, contributing to my team’s success both offensively and defensively. My time in El Salvador’s first division taught me the importance of discipline, teamwork, and continuous improvement.</p>
-        <p>During my professional career, I played for top clubs, where I had the opportunity to compete at the highest level and train alongside some of the best players in the region. This experience gave me invaluable insights into the game, from tactical understanding to fitness and mental toughness, all of which I bring into my coaching sessions today.</p>
         <p>Now, as a coach, I’m dedicated to helping players of all levels improve their skills and reach their full potential. Whether you're looking to improve your dribbling, passing, shooting, or overall soccer IQ, I’m here to help you succeed!</p>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
         <h2>Services Offered</h2>
+
         <div class="service-item">
             <h3>Private Sessions</h3>
             <p>Each session is one hour long, where we will work on developing your child's key soccer skills, including dribbling, passing, and shooting. These sessions are personalized to help each player improve their technique and overall understanding of the game in a fun, supportive environment.</p>
         </div>
+
         <div class="service-item">
             <h3>Speed & Agility</h3>
             <p>Focused drills to increase your child's speed, agility, and overall fitness for soccer. These sessions are designed to help young players become quicker on the field and improve their reaction times during match situations.</p>
@@ -117,4 +163,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-       
+        <h2>Contact & Book a Session</h2>
+        <p>Ready to improve your skills? Click the button below to book a private training session with me!</p>
+        <p>If you have any questions, feel free to
+
