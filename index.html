@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josué's Soccer Training</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet"> <!-- Updated Font -->
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -17,153 +17,269 @@
             background-repeat: no-repeat;
         }
 
-        /* Navigation */
-        .nav {
+        /* Header Section (Navigation Bar) */
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
             background-color: rgba(0, 0, 0, 0.7);
-            overflow: hidden;
+            z-index: 9999;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
 
-        .nav a {
-            float: left;
-            display: block;
+        .header a {
             color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
             text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Container */
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-        }
-
-        h1 {
-            color: #fff;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #fff;
-            font-size: 28px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #fff;
-            line-height: 1.6;
-        }
-
-        .btn {
-            text-decoration: none;
-            color: white;
-            background-color: #333;
-            padding: 12px 25px;
-            border-radius: 5px;
             display: inline-block;
-            margin-top: 20px;
-            font-size: 16px;
         }
 
-        .btn:hover {
-            background-color: #555;
+        .header a:hover {
+            background-color: #f4a261;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            font-size: 1.2rem;
+            background-color: #f4a261;
+            padding: 12px 24px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background-color: #e76f51;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
         }
 
         /* Services Section */
         .services {
-            margin-top: 40px;
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+        }
+
+        .services h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
         }
 
         .service-item {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .service-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
         }
 
         .service-item h3 {
+            font-size: 1.8rem;
             color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .service-item p {
-            color: #333;
-            font-size: 16px;
+            font-size: 1.2rem;
+            color: #555;
         }
 
-        .contact {
-            margin-top: 40px;
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #ffffff;
+            padding: 60px 20px;
             text-align: center;
         }
 
-        .contact p {
-            font-size: 18px;
+        .testimonials h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .testimonial-item {
+            margin: 20px;
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-item p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .testimonial-item .author {
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer .social-links {
+            margin-top: 15px;
+        }
+
+        .footer .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        .footer .social-links a:hover {
+            color: #f4a261;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <div class="nav">
+    <!-- Header (Navigation) -->
+    <div class="header">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
     </div>
 
-    <!-- Home Section -->
-    <div id="home" class="container">
-        <h1>Welcome to Josué's Soccer Training</h1>
-        <p>Book a private session and take your game to the next level!</p>
-        <a href="https://calendly.com/josuedubon5/training-session" class="btn" target="_blank">Book Now</a>
+    <!-- Hero Section -->
+    <div id="home" class="hero">
+        <div>
+            <h1>Take Your Game to the Next Level</h1>
+            <p>Get personalized soccer training to improve your skills, from dribbling to shooting.</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
     </div>
 
     <!-- About Section -->
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Hi, I'm Josué Dubon! I have had the privilege of playing professional soccer in El Salvador for several years, where I honed my skills on the field and developed a deep understanding of the game. Throughout my career, I played as a winger, contributing to my team’s success both offensively and defensively. My time in El Salvador’s first division taught me the importance of discipline, teamwork, and continuous improvement.</p>
-        <p>Now, as a coach, I’m dedicated to helping players of all levels improve their skills and reach their full potential. Whether you're looking to improve your dribbling, passing, shooting, or overall soccer IQ, I’m here to help you succeed!</p>
+    <section id="about" class="about">
+        <h2>About Josué Dubon</h2>
+        <p>I’m Josué Dubon, a former professional soccer player from El Salvador. After several years playing in the first division as a winger, I transitioned into coaching. Now, I dedicate myself to helping young athletes improve their skills and take their game to the next level. My training programs are personalized to focus on individual growth and improvement.</p>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <h2>Services Offered</h2>
+        <h2>Training Services</h2>
 
         <div class="service-item">
             <h3>Private Sessions</h3>
-            <p>Each session is one hour long, where we will work on developing your child's key soccer skills, including dribbling, passing, and shooting. These sessions are personalized to help each player improve their technique and overall understanding of the game in a fun, supportive environment.</p>
+            <p>One-on-one coaching focused on dribbling, passing, shooting, and overall game understanding. Each session is 60 minutes, designed to maximize improvement and build confidence.</p>
         </div>
 
         <div class="service-item">
-            <h3>Speed & Agility</h3>
-            <p>Focused drills to increase your child's speed, agility, and overall fitness for soccer. These sessions are designed to help young players become quicker on the field and improve their reaction times during match situations.</p>
+            <h3>Speed & Agility Training</h3>
+            <p>Focused on improving your athleticism with specialized drills designed to increase speed, agility, and endurance on the field.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact & Book a Session</h2>
-        <p>Ready to improve your skills? Click the button below to book a private training session with me!</p>
-        <p>If you have any questions, feel free to
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What People Are Saying</h2>
+
+        <div class="testimonial-item">
+            <p>"Josué's training helped my son improve his dribbling and shooting technique. The sessions were intense but fun. He’s more confident on the field now!"</p>
+            <div class="author">- Sarah M., Parent</div>
+        </div>
+
+        <div class="testimonial-item">
+            <p>"I’ve been training with Josué for a few months, and the improvements in my game have been noticeable. His coaching has taken my game to the next level!"</p>
+            <div class="author">- Luis P., Player</div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Josué's Soccer Training</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
 
