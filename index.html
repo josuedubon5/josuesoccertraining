@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josué's Soccer Training</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet"> <!-- Updated Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -15,6 +15,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         /* Header Section (Navigation Bar) */
@@ -101,7 +102,7 @@
             margin-bottom: 30px;
         }
 
-        /* Services Section */
+        /* Service Section */
         .services {
             background-color: #f4f4f4;
             padding: 60px 20px;
@@ -140,44 +141,31 @@
             color: #555;
         }
 
-        /* Testimonials Section */
-        .testimonials {
-            background-color: #ffffff;
+        /* Gallery Section */
+        .gallery {
             padding: 60px 20px;
             text-align: center;
+            background-color: #ffffff;
         }
 
-        .testimonials h2 {
+        .gallery h2 {
             font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
             margin-bottom: 30px;
             color: #333;
         }
 
-        .testimonial-item {
-            margin: 20px;
-            background-color: #f4f4f4;
-            padding: 30px;
-            border-radius: 10px;
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
-        .testimonial-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .testimonial-item p {
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .testimonial-item .author {
-            font-weight: bold;
-            color: #333;
-            margin-top: 15px;
+        .gallery img:hover {
+            transform: scale(1.05);
         }
 
         /* Footer Section */
@@ -221,8 +209,8 @@
     <div class="header">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="#services">Service</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </div>
 
@@ -238,41 +226,31 @@
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Josué Dubon</h2>
-        <p>I’m Josué Dubon, a former professional soccer player from El Salvador. After several years playing in the first division as a winger, I transitioned into coaching. Now, I dedicate myself to helping young athletes improve their skills and take their game to the next level. My training programs are personalized to focus on individual growth and improvement.</p>
+        <p>I’m Josué Dubon, a professional soccer player who spent several years playing in El Salvador's top division. As a winger, I developed key skills that allowed me to compete at the highest levels. I’m passionate about helping young athletes unlock their potential by sharing the knowledge and skills I gained during my career. My goal is to guide players towards mastering essential techniques like dribbling, passing, and shooting while also enhancing their game understanding.</p>
     </section>
 
-    <!-- Services Section -->
+    <!-- Service Section -->
     <section id="services" class="services">
-        <h2>Training Services</h2>
+        <h2>Private Soccer Training</h2>
 
         <div class="service-item">
-            <h3>Private Sessions</h3>
-            <p>One-on-one coaching focused on dribbling, passing, shooting, and overall game understanding. Each session is 60 minutes, designed to maximize improvement and build confidence.</p>
-        </div>
-
-        <div class="service-item">
-            <h3>Speed & Agility Training</h3>
-            <p>Focused on improving your athleticism with specialized drills designed to increase speed, agility, and endurance on the field.</p>
+            <h3>One-on-One Session</h3>
+            <p>Each session is one hour, focusing on improving key aspects of your game. We will work on your dribbling, passing, shooting, and overall game understanding. These personalized sessions are designed to help you take your soccer skills to the next level and build confidence on the field.</p>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <h2>What People Are Saying</h2>
-
-        <div class="testimonial-item">
-            <p>"Josué's training helped my son improve his dribbling and shooting technique. The sessions were intense but fun. He’s more confident on the field now!"</p>
-            <div class="author">- Sarah M., Parent</div>
-        </div>
-
-        <div class="testimonial-item">
-            <p>"I’ve been training with Josué for a few months, and the improvements in my game have been noticeable. His coaching has taken my game to the next level!"</p>
-            <div class="author">- Luis P., Player</div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div>
+            <img src="https://example.com/photo1.jpg" alt="Soccer training image 1">
+            <img src="https://example.com/photo2.jpg" alt="Soccer training image 2">
+            <img src="https://example.com/photo3.jpg" alt="Soccer training image 3">
         </div>
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <p>&copy; 2025 Josué's Soccer Training</p>
         <div class="social-links">
             <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
@@ -282,4 +260,5 @@
 
 </body>
 </html>
+
 
