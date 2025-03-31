@@ -70,9 +70,9 @@
         }
 
         .hero .btn {
-            font-size: 2rem;
-            background-color: #f4a261; /* Bright orange */
-            padding: 20px 40px;
+            font-size: 1.8rem;
+            background-color: #003366; /* Dark blue */
+            padding: 16px 32px;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -80,7 +80,7 @@
         }
 
         .hero .btn:hover {
-            background-color: #d9826f; /* Darker orange */
+            background-color: #001f33; /* Darker blue */
         }
 
         /* About Section */
@@ -164,8 +164,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            object-fit: cover; /* Ensures image maintains aspect ratio without cutting off */
-            height: 300px; /* Ensures the image height is consistent */
         }
 
         .gallery img:hover {
@@ -217,15 +215,51 @@
             .hero p {
                 font-size: 1.2rem;
             }
+        }
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josué's Soccer Training</title>
+    <style>
+        /* Gallery Section */
+        #gallery {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
 
-            .gallery img {
-                height: 200px; /* Adjusts image size for smaller screens */
-            }
+        #gallery h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Gallery Item */
+        .gallery-item {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 
 <body>
+
     <!-- Header (Navigation) -->
     <div class="header">
         <a href="#home">Home</a>
@@ -261,35 +295,40 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/IMG_6072.JPG?raw=true" alt="Gallery Image 1">
-            </div>
-            <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/main/your_image_name2.jpg?raw=true" alt="Gallery Image 2">
-            </div>
-            <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/main/your_image_name3.jpg?raw=true" alt="Gallery Image 3">
-            </div>
+    <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/IMG_6072.JPG" alt="Gallery Image 1">
         </div>
-    </section>
+        
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/main/your_image_name2.jpg" alt="Gallery Image 2">
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/main/your_image_name3.jpg" alt="Gallery Image 3">
+        </div>
+    </div>
+</section>
 
     <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy; 2025 Josué Dubon Soccer Training. All rights reserved.</p>
+    <footer id="contact" class="footer">
+        <p>&copy; 2025 Josué's Soccer Training</p>
         <div class="social-links">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
         </div>
     </footer>
 
-    <!-- Scroll Effects for Navigation -->
     <script>
+        // Scroll Effect for Sections
         const sections = document.querySelectorAll('.section');
 
-        const scrollHandler = () => {
+        const inView = () => {
             sections.forEach(section => {
                 const rect = section.getBoundingClientRect();
                 if (rect.top < window.innerHeight && rect.bottom >= 0) {
@@ -298,11 +337,11 @@
             });
         };
 
-        window.addEventListener('scroll', scrollHandler);
-        scrollHandler(); // To check on initial load
+        window.addEventListener('scroll', inView);
+        window.addEventListener('load', inView);
     </script>
+
 </body>
 </html>
-
 
 
