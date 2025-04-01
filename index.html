@@ -93,25 +93,70 @@
         }
 
         /* About Section */
-        .about {
-            background-color: #333333;
-            padding: 60px 20px;
-            color: white;
-            text-align: center;
-        }
+        /* About Section */
+.about {
+    background-color: #333333;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
 
-        .about h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
 
-        .about p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #e0e0e0;
-            margin-bottom: 30px;
-        }
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-image {
+        margin-top: 20px;
+        max-width: 100%;
+    }
 
         /* Service Section */
         .services {
@@ -280,10 +325,17 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="about section">
-        <h2>About Josué Dubon</h2>
-        <p>I’m Josué Dubon, a professional soccer player who spent several years playing in El Salvador's top division. As a winger, I developed key skills that allowed me to compete at the highest levels. I’m passionate about helping young athletes unlock their potential by sharing the knowledge and skills I gained during my career. My goal is to guide players towards mastering essential techniques like dribbling, passing, and shooting while also enhancing their game understanding.</p>
-    </section>
+  <section id="about" class="about section">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Josué Dubon</h2>
+            <p>I’m Josué Dubon, a professional soccer player with experience in El Salvador’s first division. As a pro athlete, I developed key skills in teamwork, discipline, and tactics. Now, I’m passionate about sharing this knowledge to help young players take their game to the next level.</div>
+        <div class="about-image">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/IMG_6072.JPG" alt="Josué Dubon">
+        </div>
+    </div>
+</section>
+
 
     <!-- Service Section -->
     <section id="services" class="services section">
