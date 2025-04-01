@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,70 +7,6 @@
     <title>Josué's Soccer Training</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <style> 
-        img {
-  max-width: 100%;
-  height: auto;
-}
-        /* Hide the navigation links by default on mobile */
-@media only screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Style for the hamburger menu */
-  .navbar-toggle {
-    display: block;
-    cursor: pointer;
-  }
-
-  .navbar-toggle div {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: black;
-  }
-
-  /* When the menu is active, show links */
-  .navbar.active .navbar-links {
-    display: block;
-  }
-}
-
-        /* Mobile adjustments */
-@media only screen and (max-width: 768px) {
-  /* Adjust the layout of the sections */
-  .about-section {
-    display: block;
-    padding: 15px;
-  }
-
-  .about-text, .about-image {
-    width: 100%; /* Make the text and image take up full width */
-    margin: 0 auto;
-  }
-
-  /* Adjust font sizes */
-  h1, h2, h3 {
-    font-size: 1.2em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  /* Ensure buttons and links are not too large */
-  .button {
-    padding: 10px;
-    font-size: 0.9em;
-  }
-
-  /* Adjust any padding or margins for smaller screens */
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 /* Add padding for better alignment */
 .hero {
     padding: 20px;
@@ -414,20 +351,6 @@
 </head>
 <body>
     <!-- Header (Navigation) -->
-    <div class="navbar-toggle" onclick="toggleMenu()">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
-
-<div class="navbar-links">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</div>
     <div class="header">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -525,13 +448,6 @@
         window.addEventListener('scroll', inView);
         window.addEventListener('load', inView);
     </script>
-    <script>
-  function toggleMenu() {
-    var navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('active');
-  }
-</script>
-
 </body>
 </html>
 
