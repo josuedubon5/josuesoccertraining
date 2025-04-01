@@ -446,3 +446,30 @@
     </script>
 </body>
 </html>
+/* Make the image responsive */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Add media queries for mobile adjustments */
+@media screen and (max-width: 768px) {
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensures the image covers the area properly */
+    }
+}
+
+/* Adjust background image positioning (if you're using a background image) */
+.hero {
+    background-image:https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/PHOTO-2024-05-21-00-11-02.jpg /* Make sure to replace this with your image URL */
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Add padding for better alignment */
+.hero {
+    padding: 20px;
+}
+
