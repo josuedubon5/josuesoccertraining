@@ -7,6 +7,39 @@
     <title>Josué's Soccer Training</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <style> 
+        /* Services Section Layout */
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.services-text {
+    flex: 1;
+    text-align: left;
+    color: #333;
+}
+
+.services-image {
+    flex: 1;
+    text-align: center;
+}
+
+.services-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.services-image img:hover {
+    transform: scale(1.05);
+}
         .about-container {
     display: flex;
     align-items: center;
@@ -338,12 +371,20 @@
 
     <!-- Service Section -->
     <section id="services" class="services section">
-        <h2>Private Soccer Training</h2>
-        <div class="service-item">
-            <h3>One-on-One Session</h3>
-            <p>Each session is one hour, focusing on improving key aspects of your game. We will work on your dribbling, passing, shooting, and overall game understanding. These personalized sessions are designed to help you take your soccer skills to the next level and build confidence on the field.</p>
+    <div class="services-container">
+        <div class="services-text">
+            <h2>Private Soccer Training</h2>
+            <div class="service-item">
+                <h3>One-on-One Session</h3>
+                <p>Each session is one hour, focusing on improving key aspects of your game. We will work on your dribbling, passing, shooting, and overall game understanding. These personalized sessions are designed to help you take your soccer skills to the next level and build confidence on the field.</p>
+            </div>
         </div>
-    </section>
+        <div class="services-image">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/DSC03661.JPEG" alt="Private Soccer Training">
+        </div>
+    </div>
+</section>
+
 
     <!-- Gallery Section -->
     <section id="gallery">
