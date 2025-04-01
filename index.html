@@ -6,7 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josué's Soccer Training</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-    <style> 
+    <style>
+    /* General Body Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-image: url('https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/PHOTO-2024-05-21-00-11-02.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        scroll-behavior: smooth;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 4rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .hero .btn {
+        font-size: 2rem;
+        background-color: #f4a261;
+        padding: 20px 40px;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .hero .btn:hover {
+        background-color: #e08e45;
+        transform: scale(1.1) translateY(-3px);
+    }
+
+    /* Services Section Layout */
+    .services-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1000px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .services-text {
+        flex: 1;
+        text-align: left;
+        color: #333;
+    }
+
+    .services-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* About Section */
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1000px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    /* Mobile Responsive Fix */
+    @media screen and (max-width: 768px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Adjusting button size on mobile */
+        .hero .btn {
+            font-size: 1.5rem;
+            padding: 15px 30px;
+        }
+
+        /* About section adjustments */
+        .about-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-text, .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .services-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .services-text, .services-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Footer adjustments for mobile */
+        .footer .social-links a {
+            font-size: 1.2rem;
+        }
+
+        /* Gallery images to fit on mobile */
+        .gallery-container {
+            flex-direction: column;
+        }
+
+        .gallery-item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
 /* Add padding for better alignment */
 .hero {
     padding: 20px;
