@@ -157,17 +157,13 @@
             margin-bottom: 30px;
         }
 
-       /* Gallery Section */
-.gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; /* This will ensure the image is centered properly */
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
         .gallery img:hover {
@@ -224,38 +220,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josué's Soccer Training</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <style>
-        /* Your existing styles here... */
-
-        /* Button (Book Now) */
-        .hero .btn {
-            font-size: 2rem; /* Increased font size */
-            background-color: #ff6347; /* Brighter color */
-            padding: 18px 36px; /* Increased padding for larger button */
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            display: inline-block;
+        /* Gallery Section */
+        #gallery {
             text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
         }
 
-        .hero .btn:hover {
-            background-color: #e53e36; /* Darker shade of red on hover */
-            transform: scale(1.1); /* Slightly increase size */
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+        #gallery h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
         }
 
-        .hero .btn:active {
-            transform: scale(1); /* Slightly reduce size when clicked */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow on active */
+        /* Gallery Container */
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
-        /* Other styles... */
-    </style>
-</head>
+        /* Gallery Item */
+        .gallery-item {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -307,12 +305,12 @@
         
         <!-- Image 2 -->
         <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/d20c5958-7d20-4237-b253-8e4de7a3c924.JPG" alt="Gallery Image 2">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/e240f3e0-2e7c-405d-8447-dbcecdd0d163.JPG" alt="Gallery Image 2">
         </div>
         
         <!-- Image 3 -->
         <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/e240f3e0-2e7c-405d-8447-dbcecdd0d163.JPG" alt="Gallery Image 3">
+            <img src="https://raw.githubusercontent.com/josuedubon5/josuesoccertraining/refs/heads/main/IMG_6072.JPG" alt="Gallery Image 1">
         </div>
     </div>
 </section>
@@ -345,5 +343,4 @@
 
 </body>
 </html>
-
 
